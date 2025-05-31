@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PostItem from './components/PostItem';
+import CreatePostForm from './components/CreatePostForm';
 
 function App() {
   // State quản lý danh sách bài viết
@@ -32,6 +33,7 @@ function App() {
     <div>
       <Header />
       <main>
+      <CreatePostForm />
         <button onClick={togglePosts} style={{ marginBottom: '1rem' }}>
           {showPosts ? 'Ẩn bài viết' : 'Hiện bài viết'}
         </button>
